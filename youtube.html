@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+    }
+
+    .navbar {
+      background: #f9f9f9;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 50px;
+      width: 50px;
+    }
+
+    .search-box input {
+      padding: 5px;
+      width: 300px;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .main {
+      display: flex;
+      padding: 20px;
+    }
+
+    .video {
+      flex: 3;
+      margin-right: 20px;
+    }
+
+    .video iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    .video-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .channel-info {
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .actions button {
+      margin-right: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+      background-color: #eee;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .side-videos {
+      flex: 1;
+    }
+
+    .side-video {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: flex-start;
+    }
+
+    .side-video iframe {
+      width: 150px;
+      height: 90px;
+    }
+
+    .side-video div {
+      font-size: 14px;
+      color: #333;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/128/16183/16183555.png" alt="Logo">
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="icons">
+      <i class="fa-solid fa-video"></i>
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+      <i class="fa-regular fa-bell"></i>
+      <i class="fa-solid fa-user"></i>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/O5IXf8qB9U4" frameborder="0" allowfullscreen></iframe>
+      <div class="video-title">Complete UI/UX Design Course with Projects | Master UI/UX Design</div>
+      <div class="channel-info">ALI HASAN • 24.4K subscribers</div>
+      <div class="actions">
+        <button>Like</button>
+        <button>Dislike</button>
+        <button>Share</button>
+        <button>Download</button>
+      </div>
+    </div>
+
+    <div class="side-videos">
+      <div class="side-video">
+        <iframe src="https://www.youtube.com/embed/FlwYtS4mIQw" frameborder="0" allowfullscreen></iframe>
+        <div>Figma Tutorial For Beginners</div>
+      </div>
+
+      <div class="side-video">
+        <iframe src="https://www.youtube.com/embed/SKvsPh0qdQU" frameborder="0" allowfullscreen></iframe>
+        <div>Responsive Grid Systems in UI Design</div>
+      </div>
+
+      <div class="side-video">
+        <iframe src="https://www.youtube.com/embed/h9r_UpOzajA" frameborder="0" allowfullscreen></iframe>
+        <div>Color Theory in UI Design</div>
+      </div>
+
+      <div class="side-video">
+        <iframe src="https://www.youtube.com/embed/yhqEqcWMoqs" frameborder="0" allowfullscreen></iframe>
+        <div>Glassmorphism UI Design Tutorial</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
